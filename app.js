@@ -10,17 +10,31 @@ function renderCafe(doc){
     let li = document.createElement("li");
     let name = document.createElement("span");
     let city = document.createElement("span");
+    //creting a cross to delete the data from database
+    let cross = document.createElement("div")
 
     li.setAttribute("data-id", doc.id);
     name.textContent = doc.data().name;
     city.textContent = doc.data().city;
+    //adding cross
+    cross.textContent = "x";
 
 
     li.appendChild(name);
     li.appendChild(city);
+    //adding it to list
+    li.appendChild(cross);
 
     cafeList.appendChild(li);
     console.log(li);
+
+
+    //deleting data
+    cross.addEventListener('click', (e)=> {
+        e.stopPropagation();
+        let id = e.target.parentElement.getAttribute('data-id');
+        db.collection("cafes").doc(id).delete();
+    })
 
 }
 

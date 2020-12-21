@@ -1,5 +1,6 @@
 body{
-    background: #eab0dc;
+    /* background: #ff7070; */
+    background-image: linear-gradient(to right, #7b4397  , #dc2430);
     font-family: ubuntu;
 }
 
