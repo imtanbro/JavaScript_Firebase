@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Insignia</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Libraries CSS Files -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
+<style>
+    body{
+        font-family: sans-serif;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .table td,.table th{
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 18px;
+    }
+    .table th{
+        background-color: #081361;
+        color: white;
+    }
+    .table td{
+        background-color: #ea2262;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td, .table th{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:11px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+
+
+    
+</style>
+</head>
+
+<body>
+    <div class="wrapper" style="padding-top: 100px;">
+        <div class="radio_tabs">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-ls-4"></div>
+            <div class="col-sm-12 col-md-3 col-ls-3">
+                <label class="radio_wrap" data-radio="radio_1">
+                    <input type="radio" name="sports" class="input" checked>
+                    <span class="radio_mark">
+                        FOR FOREIGN DELEGATES
+                    </span>
+                </label>
+            </div>
+            <div class="col-sm-12 col-md-3 col-ls-3">
+                <label class="radio_wrap" data-radio="radio_2">
+                    <input type="radio" name="sports" class="input">
+                    <span class="radio_mark">
+                        FOR INDIAN DELEGATES
+                    </span>
+                </label>		
+            </div>
+            <div class="col-sm-12 col-md-1 col-ls-1"></div>
+        </div>
+    </div>	
+
+	<div class="content" style="padding-top: 50px;">
+		<div class="radio_content radio_1">
+            <div class="col-sm-12 col-md-12 col-ls-12">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" style="color: white; background-color: #32ac49;">PACKAGE</th>
+                    <th scope="col">EARLY BIRD REGISTRATION</th>
+                    <th scope="col">REGULAR REGISTRATION</th>
+                    <th scope="col">LATE REGISTRATION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Conference Package</th>
+                    <td data-label="EARLY BIRD REGISTRATION">299 USD</td>
+                    <td>339 USD</td>
+                    <td>369 USD</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Post-Conference Trip <sub>(Optional)</sub></th>
+                    <td data-label="EARLY BIRD REGISTRATION">199 USD</td>
+                    <td>199 USD</td>
+                    <td>199 USD</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+		</div>
+		<div class="radio_content radio_2">
+            <div class="col-sm-12 col-md-12 col-ls-12">
+			<table class="table table-striped" style="padding-top: 10px;">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="color: white; background-color: #32ac49;">PACKAGE</th>
+                        <th scope="col">EARLY BIRD REGISTRATION</th>
+                        <th scope="col">REGULAR REGISTRATION</th>
+                        <th scope="col">LATE REGISTRATION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Conference Package</th>
+                        <td data-label="EARLY BIRD REGISTRATION">INR 2,499</td>
+                        <td>INR 2,999</td>
+                        <td>INR 3,499</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Accommodation <sub>(Optional)</sub></th>
+                        <td data-label="EARLY BIRD REGISTRATION">INR 3,999</td>
+                        <td>INR 3,999</td>
+                        <td>INR 3,999</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gala Dineer <sub>(Optional)</sub></th>
+                        <td data-label="EARLY BIRD REGISTRATION">INR 999</td>
+                        <td>INR 999</td>
+                        <td>INR 999</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club Party <sub>(Optional)</sub></th>
+                        <td data-label="EARLY BIRD REGISTRATION">INR 999</td>
+                        <td>INR 999</td>
+                        <td>INR 999</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Post-Conference Trip <sub>(Optional)</sub></th>
+                        <td data-label="EARLY BIRD REGISTRATION">INR 6,999</td>
+                        <td>INR 6,999</td>
+                        <td>INR 6,999</td>
+                      </tr>
+                    </tbody>
+                  
+              </table>
+            </div>
+		</div>
+	</div>
+</div>	
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/* by default hide all radio_content div elements except first element */
+			$(".content .radio_content").hide();
+			$(".content .radio_content:first-child").show();
+
+			/* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
+			$(".radio_wrap").click(function(){
+			  var current_raido = $(this).attr("data-radio");
+			  $(".content .radio_content").hide();
+			  $("."+current_raido).show();
+			})
+		});
+	</script>
+
+</body>
+</html>
